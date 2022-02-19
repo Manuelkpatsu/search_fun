@@ -27,6 +27,12 @@ class AppColor {
   static const Color lightBlackColor = Color.fromRGBO(0, 0, 0, 0.39);
   static const Color deepBlackColor = Color.fromRGBO(0, 0, 0, 0.6);
   static const Color blackColor = Color(0xff000000);
+  static const Color textColor = Color(0xff1e0303);
+  static const Color greyTextColor = Color(0xff8A8A8A);
   static const Color dividerColor = Color.fromRGBO(0, 0, 0, 0.2);
   static const Color blurWhiteColor = Color.fromRGBO(255, 255, 255, 0.2);
+  static const Color blurThreeColor = Color.fromRGBO(255, 255, 255, 0.072);
+  static const Color blurFourColor = Color.fromRGBO(255, 255, 255, 0.402);
+  static const Color borderColor = Color.fromRGBO(255, 255, 255, 0.3);
+  static const Color navBarItemColor = Color(0xff14142B);
 }

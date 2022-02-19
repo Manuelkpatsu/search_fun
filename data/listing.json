@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "assets/properties/1.jpg",
+    "name": "Margalla Hills",
+    "distance": 5.1,
+    "address": "138 Ring Street, Road",
+    "owner": "Uberstzte Villas Ltd.",
+    "propertyType": "hotels",
+    "description": "A nice building",
+    "suggested": true,
+    "youMayLike": false,
+    "reservation": true,
+    "water": true,
+    "onlyIndoors": false,
+    "onlyOutdoors": false,
+    "petsAllowed": true,
+    "animalAttraction": false,
+    "forHome": true,
+    "overEighteen": true,
+    "forEvents": false,
+    "contactNumber": "092-123456789",
+    "interior": [
+      {
+        "imageId": 1,
+        "image": "assets/interior/1.jpg"
+      },
+      {
+        "imageId": 2,
+        "image": "assets/interior/2.jpg"
+      },
+      {
+        "imageId": 3,
+        "image": "assets/interior/2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "thumbnail": "assets/properties/2.jpg",
+    "name": "Margalla Hills",
+    "distance": 5.1,
+    "address": "138 Ring Street, Road",
+    "owner": "Uberstzte Villas Ltd.",
+    "propertyType": "hotels",
+    "description": "A nice building",
+    "suggested": false,
+    "youMayLike": true,
+    "reservation": true,
+    "water": true,
+    "onlyIndoors": false,
+    "onlyOutdoors": false,
+    "petsAllowed": true,
+    "animalAttraction": false,
+    "forHome": true,
+    "overEighteen": true,
+    "forEvents": false,
+    "contactNumber": "092-123456789",
+    "interior": [
+      {
+        "imageId": 1,
+        "image": "assets/interior/1.jpg"
+      },
+      {
+        "imageId": 2,
+        "image": "assets/interior/2.jpg"
+      },
+      {
+        "imageId": 3,
+        "image": "assets/interior/2.jpg"
+      }
+    ]
+  }
+]
