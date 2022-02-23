@@ -9,6 +9,7 @@ class AppTheme {
       scaffoldBackgroundColor: Colors.white,
       primaryColor: AppColor.primaryColor,
       fontFamily: 'OpenSans',
+      canvasColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
         elevation: 0,
         iconTheme: IconThemeData(color: AppColor.blackColor),

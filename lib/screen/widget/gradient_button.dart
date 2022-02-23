@@ -1,22 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:search_fun/theme/app_color.dart';
-import 'package:search_fun/theme/styles.dart';
 
 class GradientButton extends StatelessWidget {
   final VoidCallback onPressed;
-  final String action;
+  final double? height;
+  final double? width;
+  final Widget widget;
+  final double borderRadius;
 
   const GradientButton({
     Key? key,
     required this.onPressed,
-    required this.action,
+    this.height = 45,
+    this.width = double.infinity,
+    required this.widget,
+    this.borderRadius = 17,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45,
-      width: MediaQuery.of(context).size.width,
+      height: height,
+      width: width,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topCenter,
@@ -27,15 +32,17 @@ class GradientButton extends StatelessWidget {
             AppColor.deepPrimaryColor,
           ],
         ),
-        borderRadius: BorderRadius.circular(17),
+        borderRadius: BorderRadius.circular(borderRadius),
       ),
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(17)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius),
+          ),
           primary: Colors.transparent,
         ),
-        child: Text(action, style: buttonStyle),
+        child: widget,
       ),
     );
   }
