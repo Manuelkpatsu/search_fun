@@ -41,6 +41,7 @@ class _PropertyIndexScreenState extends State<PropertyIndexScreen> {
         ],
       ),
       bottomSheet: BottomSheet(
+        enableDrag: false,
         backgroundColor: AppColor.white,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(30)),

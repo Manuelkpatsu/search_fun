@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:search_fun/screen/property/filter/filter_screen.dart';
 import 'package:search_fun/screen/property/index/property_index_screen.dart';
 import 'package:search_fun/screen/property/search/widget/filter_button.dart';
 import 'package:search_fun/screen/property/search/widget/search_list.dart';
@@ -22,6 +23,7 @@ class _SearchScreenState extends State<SearchScreen> {
     _searchController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     final List<SearchTile> _searchTiles = [
@@ -100,8 +102,16 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        centerTitle: false,
         title: SearchTextField(controller: _searchController),
-        actions: [FilterButton(onPressed: () {})],
+        actions: [
+          FilterButton(onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const FilterScreen()),
+            );
+          }),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(

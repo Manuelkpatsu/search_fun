@@ -10,6 +10,7 @@ class PropertyThumbnail extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
+          alignment: Alignment.topCenter,
           image: AssetImage(thumbnail),
           fit: BoxFit.cover,// -> 02
         ),
