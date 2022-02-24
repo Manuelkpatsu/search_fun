@@ -72,7 +72,7 @@ class BookmarkScreen extends StatelessWidget {
           );
         },
         name: 'Margalla Hills',
-        thumbnail: 'assets/properties/property-7.jpg',
+        thumbnail: 'assets/properties/property-3.jpg',
         address: '138 Ring Street, Road',
         phoneNumber: '092-123456789',
         developer: '(Uberstzte Villas Ltd.)',
